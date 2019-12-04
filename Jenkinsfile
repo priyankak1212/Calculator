@@ -22,7 +22,7 @@ pipeline {
    
     stage('Build docker image') {
       steps {
-         sh 'docker build -t priyankak1212/calculator .'
+         sh 'sudo docker build -t priyankak1212/calculator .'
       }
     } 
      stage('Run docker image') {
