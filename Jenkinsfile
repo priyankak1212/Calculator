@@ -19,14 +19,10 @@ pipeline {
          sh 'npm test'
       }
     }  
-     stage('Change directory') {
-      steps {
-        sh 'cd /var/lib/jenkins/workspace/nodejs-pipeline/'
-      }
-    } 
+   
     stage('Build docker image') {
       steps {
-         sh 'docker build -t priyankak1212/calculator Dockerfile'
+         sh 'docker build -t priyankak1212/calculator'
       }
     } 
      stage('Run docker image') {
