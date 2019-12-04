@@ -27,7 +27,7 @@ pipeline {
     } 
      stage('Run docker image') {
       steps {
-         sh 'docker run -p 49160:8080 -d priyankak1212/calculator'
+         sh 'docker run -p 4900:3000 -d priyankak1212/calculator'
       }
     } 
   }
