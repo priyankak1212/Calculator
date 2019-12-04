@@ -21,7 +21,7 @@ pipeline {
     }  
      stage('Change directory') {
       steps {
-        sh 'cd /home/webwerks/Calculator/'
+        sh 'cd /var/lib/jenkins/workspace/nodejs-pipeline/'
       }
     } 
     stage('Build docker image') {
